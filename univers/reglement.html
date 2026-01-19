@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Règlement - Wiki MyTale</title>
+    <style>
+        :root {
+            --primary-color: #7289da;
+            --bg-color: #1a1a1a;
+            --card-bg: #2e2e2e;
+            --text-color: #e0e0e0;
+            --accent-color: #e74c3c; /* Rouge pour le règlement */
+            --border-color: #444;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .navbar {
+            background: #111;
+            padding: 15px 50px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .navbar a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .header-rule {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header-rule h1 {
+            font-size: 2.5em;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .rule-section {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .rule-section h2 {
+            margin-top: 0;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .rule-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .rule-list li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .rule-list li::before {
+            content: "•";
+            color: var(--accent-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.5em;
+        }
+
+        .important-note {
+            background: rgba(243, 156, 18, 0.1);
+            border: 1px dashed #f39c12;
+            padding: 20px;
+            border-radius: 8px;
+            color: #f39c12;
+            margin-top: 40px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="../index.html">← Retour à l'accueil</a>
+</nav>
+
+<div class="container">
+    <div class="header-rule">
+        <h1>Règlement du Wiki</h1>
+        <p>Afin de garantir une expérience agréable et une base de données fiable pour tous les joueurs de MyTale.</p>
+    </div>
+
+    <div class="rule-section">
+        <h2>📜 1. Qualité du Contenu</h2>
+        <ul class="rule-list">
+            <li><strong>Véracité :</strong> Assurez-vous que les informations partagées sont exactes et proviennent de la version actuelle du jeu.</li>
+            <li><strong>Spoilers :</strong> Pour le contenu lié à l'histoire principale, utilisez systématiquement les balises de spoiler prévues par le wiki.</li>
+            <li><strong>Sources :</strong> Si vous tirez des informations d'un dataminage ou d'un leak, mentionnez-le clairement.</li>
+        </ul>
+    </div>
+
+    <div class="rule-section">
+        <h2>🤝 2. Comportement Communautaire</h2>
+        <ul class="rule-list">
+            <li><strong>Respect mutuel :</strong> Aucune insulte, harcèlement ou discrimination ne sera toléré sur les pages de discussion.</li>
+            <li><strong>Guerre d'édition :</strong> En cas de désaccord sur une information, ne modifiez pas la page en boucle. Ouvrez une discussion pour trancher avec les autres membres.</li>
+            <li><strong>Crédit :</strong> Ne vous appropriez pas le travail d'autrui (guides de builds, fan-arts, etc.) sans citer l'auteur original.</li>
+        </ul>
+    </div>
+
+    <div class="rule-section">
+        <h2>🛡️ 3. Vandalisme et Abus</h2>
+        <ul class="rule-list">
+            <li><strong>Vandalisme :</strong> Toute suppression de contenu massif sans justification ou ajout de fausses informations entraînera un bannissement définitif.</li>
+            <li><strong>Publicité :</strong> Le spam et l'auto-promotion non liée à hy-mania sont strictement interdits.</li>
+            <li><strong>Comptes :</strong> Un utilisateur ne peut posséder qu'un seul compte pour contribuer.</li>
+        </ul>
+    </div>
+
+    <div class="important-note">
+        <strong>⚠️ Sanctions :</strong> Les modérateurs se réservent le droit d'avertir, de suspendre ou de bannir tout utilisateur ne respectant pas ces règles. La sévérité de la sanction dépendra de la gravité de l'infraction.
+    </div>
+
+    <section style="text-align: center; margin-top: 40px;">
+        <p>En contribuant au Wiki MyTale, vous acceptez de respecter cette charte.</p>
+        <p><em>Dernière mise à jour : 19 Janvier 2026</em></p>
+    </section>
+</div>
+
+<footer>
+    © 2026 Wiki MyTale - Géré par la communauté.
+</footer>
+
+</body>
+</html>
