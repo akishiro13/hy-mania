@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Spécifique - Wiki Hy-Mania</title>
+    <style>
+        :root {
+            --primary: #7289da;
+            --bg: #1a1a1a;
+            --surface: #2e2e2e;
+            --text: #e0e0e0;
+            --accent: #f39c12;
+            --border: #444;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background: #111;
+            padding: 15px;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h1 { color: var(--primary); text-align: center; font-size: 2.2em; }
+        .subtitle { text-align: center; color: #888; margin-top: -10px; margin-bottom: 40px; }
+
+        /* Grille des sous-catégories */
+        .hub-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .hub-section {
+            background: var(--surface);
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .hub-section:hover {
+            border-color: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        .hub-header {
+            background: #23272a;
+            padding: 15px;
+            font-weight: bold;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .hub-content {
+            padding: 15px;
+        }
+
+        .link-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .link-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #383b40;
+        }
+
+        .link-list li:last-child { border-bottom: none; }
+
+        .link-list a {
+            color: var(--text);
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            transition: 0.2s;
+        }
+
+        .link-list a:hover {
+            color: var(--accent);
+            padding-left: 5px;
+        }
+
+        .count-badge {
+            background: #111;
+            color: #666;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.8em;
+        }
+
+        .view-all {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            background: rgba(114, 137, 218, 0.1);
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        .view-all:hover { background: var(--primary); color: white; }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="../index.html" style="color: var(--primary); text-decoration: none;">← Accueil Général</a>
+</nav>
+
+<div class="container">
+    <h1>🏛️ Portail des Équipements</h1>
+    <p class="subtitle">Sélectionnez une catégorie pour voir les fiches détaillées.</p>
+
+    <div class="hub-grid">
+        
+        <div class="hub-section">
+            <div class="hub-header">⚔️ Armes de Mêlée</div>
+            <div class="hub-content">
+                <ul class="link-list">
+                    <li><a href="fiches/epee-bois.html">Épées courtes <span class="count-badge">12</span></a></li>
+                    <li><a href="#">Haches de guerre <span class="count-badge">8</span></a></li>
+                    <li><a href="#">Lances et Hast <span class="count-badge">5</span></a></li>
+                    <li><a href="#">Dagues de voleur <span class="count-badge">14</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="hub-section">
+            <div class="hub-header">✨ Artefacts Magiques</div>
+            <div class="hub-content">
+                <ul class="link-list">
+                    <li><a href="#">Sceptres Élémentaires <span class="count-badge">6</span></a></li>
+                    <li><a href="#">Grimoires anciens <span class="count-badge">10</span></a></li>
+                    <li><a href="#">Bâtons de soin <span class="count-badge">4</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="hub-section">
+            <div class="hub-header">🛡️ Armures & Défense</div>
+            <div class="hub-content">
+                <ul class="link-list">
+                    <li><a href="#">Armures lourdes (Fer/Acier) <span class="count-badge">9</span></a></li>
+                    <li><a href="#">Armures légères (Cuir) <span class="count-badge">7</span></a></li>
+                    <li><a href="#">Boucliers <span class="count-badge">11</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p style="text-align: center; color: #666; padding: 40px;">Hy-Mania Wiki - Navigation Structurelle v1.0</p>
+</footer>
+
+</body>
+</html>

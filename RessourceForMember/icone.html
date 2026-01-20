@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliothèque d'Icônes - Wiki Hy-Mania</title>
+    <style>
+        :root {
+            --primary-color: #7289da;
+            --bg-color: #1a1a1a;
+            --card-bg: #2e2e2e;
+            --text-color: #e0e0e0;
+            --accent-color: #f39c12;
+            --border-color: #444;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background: #111;
+            padding: 15px 50px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .navbar a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h1 { color: var(--primary-color); border-bottom: 2px solid var(--border-color); padding-bottom: 10px; }
+        h2 { color: var(--accent-color); margin-top: 40px; }
+
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .icon-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+
+        .icon-card:hover {
+            border-color: var(--primary-color);
+            background: #36393f;
+        }
+
+        .icon-display {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .icon-code {
+            font-family: 'Courier New', monospace;
+            font-size: 0.75em;
+            background: #111;
+            padding: 3px 6px;
+            border-radius: 4px;
+            color: #2ecc71;
+            display: block;
+            word-break: break-all;
+        }
+
+        .method-box {
+            background: #23272a;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .preview-img {
+            width: 40px;
+            height: 40px;
+            image-rendering: pixelated; /* Pour garder l'aspect Hytale/Pixelart */
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="../univers/page.html">← Retour aux ressources</a>
+</nav>
+
+<div class="container">
+    <h1>⚔️ Guide des Icônes Hy-Mania</h1>
+    <p>Les icônes permettent d'identifier rapidement le type d'un objet ou d'une section. Utilisez les ressources ci-dessous pour illustrer vos pages.</p>
+
+    <h2>1. Emojis Thématiques (Le plus simple)</h2>
+    <p>Copiez-collez simplement ces icônes directement dans vos titres ou textes.</p>
+    <div class="icon-grid">
+        <div class="icon-card">
+            <span class="icon-display">🛡️</span>
+            <span class="icon-code">Protection</span>
+        </div>
+        <div class="icon-card">
+            <span class="icon-display">⚔️</span>
+            <span class="icon-code">Combat</span>
+        </div>
+        <div class="icon-card">
+            <span class="icon-display">⛏️</span>
+            <span class="icon-code">Minage</span>
+        </div>
+        <div class="icon-card">
+            <span class="icon-display">🧪</span>
+            <span class="icon-code">Alchimie</span>
+        </div>
+        <div class="icon-card">
+            <span class="icon-display">📜</span>
+            <span class="icon-code">Lore/Quête</span>
+        </div>
+        <div class="icon-card">
+            <span class="icon-display">🗺️</span>
+            <span class="icon-code">Exploration</span>
+        </div>
+    </div>
+
+    <h2>2. Sprites Officiels Hy-Mania</h2>
+    <p>Pour les fiches techniques, utilisez les images du pack officiel (format 1:1).</p>
+    <div class="method-box">
+        <p><strong>Code à utiliser :</strong></p>
+        <code>&lt;img src="img/icons/épée_fer.png" class="icon-small"&gt;</code>
+    </div>
+    
+    <div class="icon-grid">
+        <div class="icon-card">
+            <img src="https://via.placeholder.com/40x40" class="preview-img" alt="Icon">
+            <span class="icon-code">item_sword</span>
+        </div>
+        <div class="icon-card">
+            <img src="https://via.placeholder.com/40x40" class="preview-img" alt="Icon">
+            <span class="icon-code">item_pickaxe</span>
+        </div>
+        <div class="icon-card">
+            <img src="https://via.placeholder.com/40x40" class="preview-img" alt="Icon">
+            <span class="icon-code">block_ore</span>
+        </div>
+    </div>
+
+    <h2>3. Icônes de Système (Interface)</h2>
+    <p>Pour les boutons "Modifier", "Paramètres" ou "Utilisateur", nous recommandons d'utiliser une bibliothèque de police d'icônes.</p>
+    
+    <div class="method-box">
+        <h3>Comment ajouter FontAwesome ?</h3>
+        <p>Ajoutez cette ligne dans votre <code>&lt;head&gt;</code> :</p>
+        <code>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"&gt;</code>
+    </div>
+
+    <div class="icon-grid" style="margin-top: 20px;">
+        <div class="icon-card">
+            <span class="icon-display" style="font-size: 1.5em; color: var(--primary-color);">fa-solid fa-user</span>
+            <span class="icon-code">Profil</span>
+        </div>
+        <div class="icon-card">
+            <span class="icon-display" style="font-size: 1.5em; color: var(--primary-color);">fa-solid fa-gear</span>
+            <span class="icon-code">Réglages</span>
+        </div>
+        <div class="icon-card">
+            <span class="icon-display" style="font-size: 1.5em; color: var(--primary-color);">fa-solid fa-trash</span>
+            <span class="icon-code">Supprimer</span>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p style="text-align: center; color: #666; padding: 40px;">Ressources Iconographiques Hy-Mania - 2026</p>
+</footer>
+
+</body>
+</html>
