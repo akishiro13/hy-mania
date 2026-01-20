@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOM_DE_LA_PAGE - Wiki Hy-Mania</title>
+    <style>
+        :root {
+            --primary: #7289da;
+            --bg: #1a1a1a;
+            --surface: #2e2e2e;
+            --text: #e0e0e0;
+            --accent: #f39c12;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .wiki-container {
+            max-width: 900px;
+            margin: auto;
+            background: var(--surface);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        /* Barre latérale d'infos (Infobox) */
+        .infobox {
+            float: right;
+            width: 250px;
+            background: #111;
+            border: 2px solid var(--primary);
+            margin-left: 20px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .infobox img { width: 100%; border-radius: 3px; }
+        .infobox-title { text-align: center; font-weight: bold; border-bottom: 1px solid var(--primary); margin-bottom: 10px; padding-bottom: 5px; color: var(--primary); }
+        .infobox-row { display: flex; justify-content: space-between; font-size: 0.85em; margin-bottom: 5px; }
+
+        h1 { color: var(--primary); border-bottom: 2px solid var(--primary); padding-bottom: 10px; }
+        h2 { color: var(--accent); margin-top: 30px; border-bottom: 1px solid #444; }
+        
+        .image-center { display: block; margin: 20px auto; max-width: 100%; border-radius: 8px; border: 1px solid #444; }
+        
+        .footer { margin-top: 50px; font-size: 0.8em; color: #777; text-align: center; border-top: 1px solid #444; padding-top: 20px; }
+        
+        @media (max-width: 600px) {
+            .infobox { float: none; width: 100%; margin-left: 0; margin-bottom: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wiki-container">
+    
+    <aside class="infobox">
+        <div class="infobox-title">NOM DU SUJET</div>
+        <img src="https://via.placeholder.com/250x250" alt="Image illustrative">
+        
+        <div class="infobox-row"><strong>Type :</strong> <span>Valeur</span></div>
+        <div class="infobox-row"><strong>Localisation :</strong> <span>Valeur</span></div>
+        <div class="infobox-row"><strong>Rareté :</strong> <span style="color: purple;">Épique</span></div>
+    </aside>
+
+    <h1>Titre de la page (ex: Épée de l'Oubli)</h1>
+
+    <p>
+        Écrivez ici une courte introduction qui résume ce qu'est cet élément. 
+        Pourquoi est-il important dans Hy-Mania ? Comment l'obtient-on globalement ?
+    </p>
+
+    <h2>⚔️ Caractéristiques / Détails</h2>
+    <p>
+        Ajoutez ici les détails techniques ou les statistiques. Vous pouvez créer des listes :
+    </p>
+    <ul>
+        <li><strong>Point fort 1 :</strong> Description du bonus.</li>
+        <li><strong>Point fort 2 :</strong> Description du bonus.</li>
+    </ul>
+
+    <img src="https://via.placeholder.com/600x300" class="image-center" alt="Action ou Lieu">
+
+    <h2>📜 Histoire (Lore)</h2>
+    <p>
+        Racontez ici l'origine de cet élément. D'où vient-il ? Qui l'a créé ? 
+        Est-il lié à une quête spécifique de Hy-Mania ?
+    </p>
+
+    <div class="footer">
+        Dernière modification par [NOM_DU_MEMBRE] le 20 Janvier 2026. <br>
+        Wiki Hy-Mania - Contenu sous licence Creative Commons.
+    </div>
+</div>
+
+</body>
+</html>
